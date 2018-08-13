@@ -1,3 +1,1 @@
-# myFirstAJAX
-# myFirstAJAX
-# myFirstAJAX
+To practice how to use AJAX
