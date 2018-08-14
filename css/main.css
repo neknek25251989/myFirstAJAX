@@ -1,0 +1,36 @@
+#searchBox {
+  background: #c8c8c8;
+  width: 400px;
+  height: 200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+#searchBox #email {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  width: 300px;
+}
+#searchBox .button {
+  margin: 10px auto;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+#searchBox .button input {
+  border-radius: 5px;
+  width: 50%;
+}
+#searchBox #result {
+  margin: 0 auto;
+  width: 300px;
+}
+#works {
+  margin: 10px auto;
+  width: 400px;
+}
+#works ul {
+  display: block;
+  width: 100%;
+  background: #ececec;
+}
