@@ -158,7 +158,11 @@ table {
   width: 400px;
 }
 #works ul {
+  margin: 10px auto;
   display: block;
-  width: 100%;
+  width: 200px;
+  height: 200px;
   background: #ececec;
+  list-style-type: none;
+  padding: 20px;
 }

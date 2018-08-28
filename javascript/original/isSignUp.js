@@ -43,16 +43,18 @@ window.onload = function() {
         
         for (var i = 0; i < result.length; i++) {
 
-          var liUrl = document.createElement('a');
-          liUrl.href = result[i].url;
-          liUrl.innerText = 'Link';
-          var liLink = document.createElement('li');
-          liLink.appendChild(liUrl);
-          
-                  
-          $('#works').append('<li>' + result[i].stage + '</li>');
-          $('#works').append('<li>' + result[i].tag + '</li>');
-          $('#works').append(liLink);
+          var source   = document.getElementById("entry-template").innerHTML;
+	    		var template = Handlebars.compile(source);
+
+          var context = {
+            stage:result[i].stage,
+            tag:result[i].tag,
+            link:result[i].url
+          };
+
+          var oTask = template(context);
+
+          $('#works').append(oTask);
         
         }
         
